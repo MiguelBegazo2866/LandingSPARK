@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <title>LandingPage MBL</title>
+    <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            emailjs.init("user_QHPeXRITihgxEYqpVfH4E");
+        })();
+    </script>
+</head>
+
+<body>
+    <header id="header">
+        <nav>
+            <div class="container-nav">
+                <div class="logo-div">
+                    <img src="img/eccellenz4u.png" alt="" class="logo">
+                </div>
+                <div class="nav-link">
+                    <ul class="menu">
+                        <li><a href="#header">Inicio</a></li>
+                        <li><a href="#main">Detalles</a></li>
+                        <li><a href="#video">Video</a></li>
+                        <li><a href="#mapa">Ubicación</a></li>
+                        <li><a href="#form">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="textos-form-header">
+            <section class="textos-header">
+                <h1>Eccellenz4u Inmobiliaria</h1>
+                <h2>Siempre Contigo</h2>
+
+                <h3>Oportunidad, Casa en La Molina</h3>
+            </section>
+            <section id="form" class="form-header">
+                <form id="myform" onsubmit="emailjs.sendForm('default_service', 'template_2BLK5fVm', this); return false;" method="post">
+                    <h1 style="text-align: center;">Aplicar para una casa, ahora!</h1>
+                    <label>Nombres y Apellidos: (Interesado)</label>
+                    <input type="text" name="from_name" />
+                    <label>Correo Electrónico: (Interesado)</label>
+                    <input type="text" name="from_email" />
+                    <label>Asunto:</label>
+                    <input type="text" name="subject" />
+                    <label>Teléfono:</label>
+                    <input type="text" name="phone" />
+                    <label>Mensaje</label>
+                    <input type="text" name="message" />
+                    <br><br>
+                    <button>Saber más</button>
+                </form>
+            </section>
+        </div>
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 349.20,-49.98 500.00,49.98 L500.00,150.00 L0.00,150.00 Z" style="stroke: none; fill: #FFFFFF;"></path></svg></div>
+    </header>
+    <main id="main">
+        <section class="contenedor detalle-propiedad">
+            <h2 class="titulo">Dormitorios</h2>
+            <div class="contenedor-detalle-propiedad">
+                <img src="img/dormitorioLanding.jpg" alt="" class="imagen-detalle-propiedad">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Espacios</h3>
+                    <p>3 habitaciones amplias y cómodas, excelente estado de conservación.
+                    </p>
+                    <h3><span>2</span>Iluminación</h3>
+                    <p>Todas las habitaciones con vista a jardín interior, con apropiada iluminación natural.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor detalle-propiedad1">
+            <h2 class="titulo">Comedor</h2>
+            <div class="contenedor-detalle-propiedad">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Iluminación</h3>
+                    <p>Completamente iluminado, con acceso a jardín interior, amplios ventanales le dan la luz natural y ventilación apropiadas.
+                    </p>
+                    <h3><span>2</span>Amplitud</h3>
+                    <p>Amplio comedor, agradable ambiente, excelente estado de conservación.
+                    </p>
+                </div>
+                <img src="img/comedorLanding.jpg" alt="" class="imagen-detalle-propiedad">
+            </div>
+        </section>
+        <section class="contenedor detalle-propiedad">
+            <h2 class="titulo">Cocina</h2>
+            <div class="contenedor-detalle-propiedad">
+                <img src="img/cocinaLanding.jpg" alt="" class="imagen-detalle-propiedad">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Hermoso Diseño</h3>
+                    <p>Espacio completamente amplio, amoblada con hermosos gabinetes y campana extractora, necesaria en toda moderna cocina.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="contenedor detalle-propiedad2">
+            <h2 class="titulo">Sala</h2>
+            <div class="contenedor-detalle-propiedad">
+                <div class="contenido-textos">
+                    <h3><span>1</span>Sala: Diseño Moderno</h3>
+                    <p>Amplia Sala, hermoso diseño, ideal para reuniones familiares y sociales. En perfectas condiciones.
+                    </p>
+                </div>
+                <img src="img/salaLanding.jpg" alt="" class="imagen-detalle-propiedad">
+            </div>
+        </section>
+        <section id="video" class="contenedor detalle-propiedad">
+            <h2 class="titulo">Video</h2>
+            <div class="contenedor-video">
+                <iframe width="100%" height="450px" src="img/videoLandingPage.mp4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <div class="contenido-video">
+                    <h3><span>1</span>Video Ilustrativo</h3>
+                    <p>Un video compleo de los ambientes interiores de la Propiedad, así como también del entorno y vistas exteriores.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="contenedor-footer">
+            <div class="content-widgets">
+                <div class="content-foo">
+                    <a href="#header">Inicio</a>
+                </div>
+                <div class="content-foo">
+                    <a href="#main">Detalles</a>
+                </div>
+                <div class="content-foo">
+                    <a href="#video">Video</a>
+                </div>
+                <div class="content-foo">
+                    <a href="#form">Contacto</a>
+                </div>
+                <div class="content-foo">
+                    <h4>Phone</h4>
+                    <p>+51 994381576</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Email</h4>
+                    <p>mike_begazo@hotmail.com</p>
+                </div>
+                <div class="content-foo">
+                    <h4>Location</h4>
+                    <p>Lima, Perú</p>
+                </div>
+            </div>
+            <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.5696030681825!2d-76.94942938518712!3d-12.073106491449769!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c6e5d469b767%3A0xcc174f39aedf4340!2sAv.%20la%20Fontana%201025%2C%20Cercado%20de%20Lima%2015024%2C%20Per%C3%BA!5e0!3m2!1ses!2sco!4v1594497186794!5m2!1ses!2sco"
+                width="500" height="375" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <h2 class="titulo-final">&copy; Eccellenz4u | Miguel Begazo</h2>
+    </footer>
+</body>
+
+</html>
