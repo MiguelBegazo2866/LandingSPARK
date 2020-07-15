@@ -316,6 +316,30 @@ footer {
     }
 }
 
+@media screen and (max-width:768px) {
+    header {
+        background-position: center;
+        height: 86rem;
+    }
+    nav {
+        text-align: center;
+        height: 400px;
+        line-height: 400px;
+        position: absolute;
+    }
+    .menu {
+        float: none;
+    }
+    .menu li {
+        width: 100%;
+        height: 70px;
+        line-height: 70px;
+    }
+    .textos-header {
+        margin-top: 430px;
+    }
+}
+
 @media screen and (max-width:500px) {
     header {
         background-position: center;
